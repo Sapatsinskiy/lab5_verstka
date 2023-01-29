@@ -45,23 +45,25 @@ header{
     text-transform: uppercase;
     color: #000000;
 
-    animation: text 3s 1;
+    animation: text1 3s 1;
 }
-@keyframes text {
+@keyframes text1 {
     0%{
-        letter-spacing: 12px;
+        margin-left: 75%;
      
     }
-    30%{
-      letter-spacing: 8px;
+    40%{
+        margin-left: 50%;
      
     }
-    85%{
-      letter-spacing: 4px;
+    80%{
+        margin-left: 25%;
       
     }
+    100%{
+        margin-left: 5%;
+    }
   }
-
 
 .menu-item{
     margin-right: 18px;
@@ -82,19 +84,39 @@ header{
     flex-direction: row;
 }
 
+
+
 .first-block{
     justify-content: space-between;
 }
 
 .first-block-text{
     margin-top: 200px;
+
+    animation: text2 3s 1;
 }
+@keyframes text2{
+    0%{
+        letter-spacing: 12px;
+     
+    }
+    40%{
+        letter-spacing: 8px;
+     
+    }
+    80%{
+        letter-spacing: 4px;
+      
+    }
+    100%{
+        letter-spacing: 2px;
+    }
+  }
+
 .first-block-font-style1{
     font-size: 51px;
     line-height: 59px;
     text-align: center;
-
-    animation: text 3s 1;
 }
 .first-block-font-style2{
     margin-top: 27px;
