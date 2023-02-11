@@ -83,13 +83,9 @@ header{
     display: flex;
     flex-direction: row;
 }
-
-
-
 .first-block{
     justify-content: space-between;
 }
-
 .first-block-text{
     margin-top: 200px;
 
@@ -128,36 +124,38 @@ header{
     
     animation: text 3s 1;
 }
-.firts-block-img1{  
+.first-block-img1{  
     margin-left: 59px;
     width: 680px;
     height: 902px;
     border-radius: 0px;  
 }
-.firts-block-img2{
-    margin: auto;
+.first-block-img2{
+    display: flex;
+    justify-content: center;
     margin-top: 86px;
+}
+.first-block-img2-size{
     width: 190px;
     height: 190px;
     border-radius: 0px; 
 }  
-.firts-block-img3{
+.first-block-img3{
+    display: flex;
+    justify-content: center;
     width: 440px;
     height: 1px;
     margin-top: 103px;
     background: #050505;
     border-radius: 0px;
 }
-.section-color1{
-background: #FAF5E5;
-}
+
 .second-block{
     justify-content: left;
     align-items: center;
 }
 .second-block-element{
     margin-top: 140px;
-    margin-left: 25px;
 }
 .second-block-font-style1{
     margin-top: 41px;
@@ -187,6 +185,10 @@ background: #FAF5E5;
     justify-content: center;
     border-radius: 0px;
 }
+.second-block-img1-size{
+    height: 140px ;
+    width: 283px;
+}
 .second-block-img2{
     margin: auto;
     margin-top: 5px;
@@ -195,9 +197,12 @@ background: #FAF5E5;
     background: rgba(0, 0, 0, 0.3);
 }
 .second-block-img3{
+    display: flex;
+    justify-content: center;
     margin-top: 12px;
-    margin-left: 45px;
     border-radius: 0px;
+}
+.second-block-img3-size{
     width: 282px;
     height: 376px;
 }
@@ -219,8 +224,6 @@ background: #FAF5E5;
 }
 .third-block-img3{
     margin-top: 199px;
-    width: 404px;
-    height: 538px;
     border-radius: 0px;
 }
 .third-block-font-style1{
@@ -251,14 +254,12 @@ background: #FAF5E5;
     margin-top: 137px;
 }
 .third-fourth-block-img4{
-    width: 404px;
-    height: 539px;
+    /* width: 404px;
+    height: 539px; */
     border-radius: 0px;
 }
 .third-block-font-style4{
     margin-top: 197px;
-    width: 390px;
-    height: 203px;
     font-size: 26px;
     line-height: 34px;
     letter-spacing: 0.78px;
@@ -332,7 +333,7 @@ margin-left: 125px;
 }
 .sixth-block{
     min-height: 100%;
-    min-width: 640px;
+    min-width: 280px;
     height: auto;
     width: 100%;
 }
@@ -357,8 +358,6 @@ margin-left: 125px;
 .seventh-block-img1{
     width: auto;
     height: 1px;
-    left: 0px;
-    top: 6224px;
     background: #050505;
     border-radius: 0px;
 }
@@ -377,8 +376,7 @@ button{
     width: 99px;
     height: 22px;
     background: #222222;
-    border: 1px solid #222222;
-    border-radius: 0px
+    cursor: pointer;
 }
 .button-color{
     color: white;
@@ -389,11 +387,9 @@ button{
 }
 .eight-block-element1{
     margin-top: 83px;
-    border: #000000 solid 1px;
 }
 .eight-block-img1{
-    width: 514px;
-    height: 685px;
+    border-radius: 0px;
 }
 .eight-block-element2{
     margin-top: 145px;
@@ -434,13 +430,9 @@ button{
 }
 .eight-adc1{
     margin-left: 17px;
-    width: 187px;
-    height: 101px;
 }
 .eight-adc2{
     margin-left: 32px;
-    width: 185px;
-    height: 84px;
 }
 .eight-adc-block{
     margin-top: 42px;
@@ -455,12 +447,7 @@ button{
     margin-top: 23px;
     margin-bottom: 61px;
 }
-.nineth-img1{
-    margin-left: 92px;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 73px;
-}
+
 .nineth-font-style1{
     text-align: center;
     font-size: 13px;
@@ -469,11 +456,23 @@ button{
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-.nineth-img2{
-    margin-top: 9px;
-    margin-left: 79.5px;
+.nineth-img1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 73px;
+}
+.nineth-img1-size{
+    width: 150px;
+    height: 150px;
+}
+.nineth-img2-size{
     width: 175px;
     height: 175px;
+}
+.nineth-img2{
+    display: flex;
+    justify-content: center;
+    margin-top: 9px;
     margin-bottom: 23px;
 }
 .nineth-mesengers{
@@ -565,4 +564,691 @@ footer{
 }
 .footer-line{
     border-left: #000000 solid 1px;
+}
+
+/* адапривність */
+
+@media (max-width: 1305px){
+    .first-block-img1{
+       display: none;
+    }
+    .first-block{
+        justify-content: center;
+    }
+
+
+    .second-block{
+        justify-content: center;
+    }
+    
+
+    .third-block{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .third-block-position1{
+        display: flex;
+        justify-content: center;
+    }
+        
+    .third-block-position2{
+        display: flex;
+        justify-content: center;
+     }
+   
+     .third-block-element2{
+        margin-left: 0;
+     }
+     .third-block-img4{
+        display: none;
+     }
+
+    .fourth-block{
+        flex-direction: column;
+       align-items: center;
+     }
+     .fourth-block-element2{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .fourth-font-style4{
+        margin-bottom: 130px;
+    }
+
+    .fifth-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fifth-block-element2{
+        margin-left: 0;
+        margin-top: 35px;
+    }
+
+    .seventh-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .seventh-blocl-element{
+        align-items: center;
+    }
+    .seventh-block-element2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input{
+        margin-right: 0;
+        margin-top: 13px;
+    }
+    button{
+        margin-top: 10px;
+    }
+
+    .eight-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .eight-block-element2{
+        margin-top: 145px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:1080px){
+    .container{
+        width: 1020px;
+    }
+    .footer-img1{
+        display: none;
+    }
+    footer{
+        height: 241px;
+    }
+    .footer-container{
+        justify-content: center;
+        width: 1020px;
+    }
+    .footer-line{
+        border: 0;
+    }
+}
+
+@media(max-width:1020px){
+    .container{
+        width: 768px;
+    }
+    
+}
+
+@media(max-width:768px){
+    .container{
+        width: 480px;
+    }
+
+    .first-block-font-style1{
+        font-size: 36px;
+        line-height: 41px;        
+    }
+    .first-block-font-style2{
+        margin-top: 19px;
+        font-size: 9.24px;
+        line-height: 9.24px;
+    }
+    .first-block-img2{
+        margin-top: 61px;
+    } 
+    .first-block-img2-size{
+        width: 135px;
+        height: 135px; 
+    } 
+    .first-block-img3{
+        width: 312px;
+        margin-top: 73px;
+    }
+
+/* кінець першого блоку */
+
+    .second-block-element{
+        margin-top: 100px;
+    }
+    .second-block-font-style1{
+        margin-top: 29px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .second-block-font-style2{
+        margin-top: 75px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .second-block-font-style3{  
+        margin-top: 58px;
+        font-size: 9px;
+        line-height: 9px;
+    }
+    .second-block-img1{
+        margin-top: 57px;        
+    }
+    .second-block-img1-size{
+        height: 100px ;
+        width: 201px;
+    }
+    .second-block-img2{
+        margin-top: 4px;
+        width: 115px;       
+    }
+    .second-block-img3{
+        margin-top: 8px;
+    }
+    .second-block-img3-size{
+        width: 200px;
+        height: 267px;
+    }
+
+/* кінець 2 блоку */
+
+    .third-block-element1{
+        margin-top: 114px;
+    }
+    .third-block-font-style1{
+        margin-top: 34px;
+        font-size: 42px;
+        line-height: 44px;       
+    }
+    .third-block-font-style2{
+        margin-top: 34px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .third-block-font-style3{
+        margin-top: 58px;
+        font-size: 9px;
+        line-height: 9px;
+    }
+    .third-block-font-style4{
+        margin-top: 141px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .third-block-img2{
+        margin-top: 4px;
+        width: 90px;
+    }
+    .third-block-img3{
+        margin-top: 141px;
+        display: flex;
+        justify-content: center;
+    }
+    .third-block-img3-size{
+        width: 287px;
+        height: 383px;
+    }
+
+    .third-block-img5{
+        margin-top: 5px;
+        width: 48px;
+    }
+
+/* кінець 3 блоку */
+
+    .fourth-block-element1{
+        margin-top: 92px;
+        margin-bottom: 93px;
+    }
+    .fourth-block-img4-size{
+        height: 386px ;
+        width: 287px;
+    }
+    .fourth-font-style1{
+        font-size: 9px;
+        line-height: 9px;
+    }
+    .fourt-font-style2{
+        margin-top: 31px;
+        font-size: 43px;
+        line-height: 45px;
+    }
+    .fourth-font-style3{
+        margin-top: 31px;
+        font-size: 11px;
+        line-height: 16px;    
+    }
+    .fourth-font-style4{
+        margin-top: 20px;
+        margin-bottom: 92px;
+    }
+  
+/* кінець 4 блоку */
+
+    .fifth-img1-size{
+        height: 258px ;
+        width: 366px;
+    }
+    .fifth-font-style1{
+        font-size: 9px;
+        line-height: 10px;
+    }
+    .fifth-font-style2{
+        margin-top: 27px;
+        font-size: 43px;
+        line-height: 45px;
+    }
+    .fifth-font-style3{
+        margin-top: 36px;
+        font-size: 11px;
+        line-height: 16px;    
+    }
+
+/* кінець 5 блоку */
+
+    .seventh-block-element2{
+        margin-top: 46px;
+        margin-bottom: 46px;
+    }
+    .seventh-block{
+        margin-top: 65px;
+    }
+    .seventh-font-style1{
+        font-size: 9px;
+        line-height: 10px;    
+    }
+    .seventh-font-style2{
+        margin-top: 57px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+/* кінець 7 блоку */
+
+    .eight-block{
+        margin-top: 18px;
+        margin-bottom: 58px;
+    }
+    .eight-block-element1{
+        margin-top: 89px;
+    }
+    .eight-block-img1-size{
+        width: 366px;
+        height: 487px;
+    }
+    .eight-block-element2{
+        margin-top: 103px;
+    }
+    .eight-font-style1{
+        margin-left: 12px;
+        font-size: 9px;
+        line-height: 10px;    
+    }
+    .eight-font-style2{
+        margin-top: 27px;
+        font-size: 41px;
+        line-height: 45px;    
+        margin-bottom: 34px;
+    }
+    .eight-font-style3{
+        font-size: 11px;
+        line-height: 16px;    
+    }
+    .eight-font-style4{
+        margin-top: 2px;
+    }
+    .eight-font-style5{
+        margin-top: 140px;
+    }
+    .eight-line{
+        margin-top: 26px;
+        width: 288px;
+    }
+    .eight-adc1{
+        margin-left: 12px;
+    }
+    .eight-adc1-size{
+        width: 133px;
+        height: 72px;
+    }
+    .eight-adc2{
+        margin-left: 23px;
+    }
+    .eight-adc2-size{
+        width: 132px;
+        height: 60px;
+    }
+    .eight-adc-block{
+        margin-top: 30px;
+    }
+
+/* кінець 8 блоку */
+
+    .nineth-block-element1{
+        margin-top: 16px;
+        margin-bottom: 43px;
+    }
+
+    .nineth-font-style1{
+        font-size: 9px;
+        line-height: 9px;
+        margin-bottom: 11px;
+    }
+    .nineth-img1{
+        margin-bottom: 52px;
+    }
+    .nineth-img1-size{
+        width: 107px;
+        height: 107px;
+    }
+    .nineth-img2-size{
+        width: 124px;
+        height: 124px;
+    }
+    .nineth-img2{
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
+    .mesenger{
+    margin-right: 15px;
+    }
+
+/* кінець 9 блоку */
+
+    .footer-block1{
+        display: none;
+    }
+    .footer-block2{
+        display: none;
+    }
+    .footer-block3{
+        display: none;
+    }
+    footer{
+        align-items: center;
+        height: 18px;
+    }
+    .footer-line{
+        width: 98%;
+    }
+    .creators-info-block{
+        border-top: 0;
+        margin-top: 0px;
+    }
+    .creators-info-text-style{
+        margin-top: 6px;
+        margin-right: 2px;
+        font-size: 6px;
+        line-height: 6px;
+    }
+}
+
+
+@media(max-width:480px){
+    .container{
+        width: 320px;
+    }
+    
+    .first-block-font-style1{
+        font-size: 22px;
+        line-height: 26px;        
+    }
+    .first-block-font-style2{
+        margin-top: 8.4px;
+        font-size: 5.7px;
+        line-height: 5.7px;
+    }
+    .first-block-img2{
+        margin-top: 38px;
+    } 
+    .first-block-img2-size{
+        width: 84px;
+        height: 84px; 
+    }
+    .first-block-img3{
+        width: 195px;
+        margin-top: 46px;
+    }
+
+    /* кінець першого блоку */
+
+    .second-block-element{
+        margin-top: 62px;
+    }
+    .second-block-font-style1{
+        margin-top: 18px;
+        font-size: 7px;
+        line-height: 9px;
+    }
+    .second-block-font-style2{
+        margin-top: 47px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .second-block-font-style3{
+        margin-top: 36px;
+        font-size: 6px;
+        line-height: 6px;
+    }
+    .second-block-img1{
+        margin-top: 36px;        
+    }
+    .second-block-img1-size{
+        height: 62px ;
+        width: 126px;
+    }
+    .second-block-img2{
+        margin-top: 3px;
+        width: 71px;       
+    }
+    .second-block-img3{
+        margin-top: 5px;
+    }
+    .second-block-img3-size{
+        width: 125px;
+        height: 167px;
+    }
+
+/* кінець 2 блоку */
+    
+    .third-block-element1{
+    margin-top: 71px;
+    }
+    .third-block-font-style1{
+        margin-top: 21px;
+        font-size: 26px;
+        line-height: 28px;       
+    }
+    .third-block-font-style2{
+        margin-top: 21px;
+        font-size: 7px;
+        line-height: 10px;
+    }
+    .third-block-font-style3{
+        margin-top: 36px;
+        font-size: 6px;
+        line-height: 6px;
+    }
+    .third-block-font-style4{
+        margin-top: 80px;
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .third-block-img2{
+        margin-top: 3px;
+        width: 74px;
+    }
+    .third-block-img3{
+        margin-top: 88px; 
+    }
+    .third-block-img3-size{
+        width: 180px;
+        height: 239px;
+    }
+  
+    .third-block-img5{
+        margin-top: 3px;
+        width: 38px;
+    }
+
+/* кінець 3 блоку */
+    
+    .fourth-block-element1{
+        margin-top: 58px;
+        margin-bottom: 59px;
+    }
+    .fourth-block-img4-size{
+        height: 241px ;
+        width: 179px;
+    }
+    .fourth-font-style1{
+        font-size: 6px;
+        line-height: 6px;
+    }
+    .fourt-font-style2{
+        margin-top: 19px;
+        font-size: 27px;
+        line-height: 28px;
+    }
+    .fourth-font-style3{
+        margin-top: 19px;
+        font-size: 7px;
+        line-height: 10px;    
+    }
+    .fourth-font-style4{
+        margin-top: 13px;
+        margin-bottom: 58px;
+    }
+
+/* кінець 4 блоку */
+
+    .fifth-img1-size{
+        height: 161px ;
+        width: 229px;
+    }
+    .fifth-font-style1{
+        font-size: 6px;
+        line-height: 7px;
+    }
+    .fifth-font-style2{
+        margin-top: 17px;
+        font-size: 27px;
+        line-height: 28px;
+    }
+    .fifth-font-style3{
+        margin-top: 23px;
+        font-size: 7px;
+        line-height: 10px;    
+    }
+
+/* кінець 5 блоку */
+
+    .seventh-block-element2{
+        margin-top: 29px;
+        margin-bottom: 29px;
+    }
+    .seventh-block{
+        margin-top: 41px;
+    }
+    .seventh-font-style1{
+        font-size: 6px;
+        line-height: 7px;    
+    }
+    .seventh-font-style2{
+        margin-top: 37px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+/* кінець 7 блоку */
+
+    .eight-block{
+        margin-top: 11px;
+        margin-bottom: 36px;
+    }
+    .eight-block-element1{
+        margin-top: 56px;
+    }
+    .eight-block-img1-size{
+        width: 228px;
+        height: 304px;
+    }
+    .eight-block-element2{
+        margin-top: 64px;
+    }
+    .eight-font-style1{
+        margin-left: 8px;
+        font-size: 6px;
+        line-height: 7px;    
+    }
+    .eight-font-style2{
+        margin-top: 17px;
+        font-size: 26px;
+        line-height: 28px;    
+        margin-bottom: 21px;
+    }
+    .eight-font-style3{
+        font-size: 7px;
+        line-height: 10px;    
+    }
+    .eight-font-style5{
+        margin-top: 88px;
+    }
+    .eight-line{
+        margin-top: 17px;
+        width: 180px;
+    }
+    .eight-adc1{
+        margin-left: 8px;
+    }
+    .eight-adc1-size{
+        width: 83px;
+        height: 45px;
+    }
+    .eight-adc2{
+        margin-left: 14px;
+    }
+    .eight-adc2-size{
+        width: 63px;
+        height: 38px;
+    }
+    .eight-adc-block{
+        margin-top: 20px;
+    }
+
+/* кінець 8 блоку */
+
+    .nineth-block-element1{
+        margin-top: 10px;
+        margin-bottom: 27px;
+    }
+    .nineth-font-style1{
+        font-size: 6px;
+        line-height: 6px;
+        margin-bottom: 7px;
+    }
+    .nineth-img1{
+        margin-bottom: 33px;
+    }
+    .nineth-img1-size{
+        width: 67px;
+        height: 67px;
+    }
+    .nineth-img2-size{
+        width: 78px;
+        height: 78px;
+    }
+    .nineth-img2{
+        margin-top: 4px;
+        margin-bottom: 10px;
+    }
+    .mesenger{
+    margin-right: 9px;
+    }
+    footer{
+        height: 14px;
+    }
+    .creators-info-text-style{
+        margin-top: 4px;
+        font-size: 4px;
+        line-height: 4px;
+    }
 }
